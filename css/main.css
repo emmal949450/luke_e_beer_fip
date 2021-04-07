@@ -1,0 +1,396 @@
+@charset "UTF-8" ;
+
+.hidden {
+	display: none;
+}
+
+#siteContainer {
+	margin: 0 auto;
+	max-width: 550px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #312d2e; 
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #312d2e;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+/*---------------------------------------------Header---------------------------------------------*/
+
+.Bar {
+	background-color: #fae205;
+	height: 13px;
+}
+
+#mainHeader {
+	margin-top: 25px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #C37628;
+}
+
+#logo {
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 170px;
+}
+
+#mainNav {
+	
+}
+
+#menu {
+	
+}
+
+#actionButton {
+	
+}
+
+
+#burgerCon {
+	margin-top: 20px;
+	display: none;
+	position: relative;
+	left: 150px;
+}
+
+#burgerCon.slideToggle {
+	display: block;
+}
+
+#mainNav button {
+	background: url(../images/burger-menu.svg) center no-repeat;
+	position: relative;
+	left: 320px;
+	border: 0px;
+	height: 50px;
+	width: 50px;
+	transition: all .1s ease;
+}	
+
+#mainNav button.expanded {
+	transform: rotate(90deg);
+}
+
+#mainNav li a {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+#mainNav li {
+	border-bottom: 1px solid #efefef;
+}
+
+#mainNav li:first-child {
+	border-top: 1px solid #efefef;
+} 
+
+#mainNav li:last-child {
+	margin-bottom: 10px;
+}
+
+
+nav a {
+	position: relative;
+	color: #e8e8ee;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .4s ease-out;
+
+}
+
+nav a::after {
+	border-radius: 1em;
+	border-top: .1em solid #e8e8ee;
+	content: "";
+	position: absolute;
+		right: 100%;
+		bottom: .14em;
+		left: 0;
+	transition: right .2s cubic-bezier(0,.5,0,1),
+			border-color .4s ease-out;
+
+}
+
+#mainNav li a:hover {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #FAE205;
+}
+
+nav a:hover::after {
+	border-color: #FAE205;
+	transform-origin: right bottom;
+	right: 0;
+
+				
+}
+
+.navtext {
+	display: none;
+}
+
+
+/*Header End*/
+
+
+/*---------------------------------------------Footer---------------------------------------------*/
+
+#footer {
+	margin-top: 20px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav {
+	margin-left: 385px;
+	width: 520px;
+	/*background-color: #bf1700;*/
+}
+
+.navtextFooter {
+	display: none;
+}
+
+/*Footer End*/
+
+
+/*---------------------------------------------Shop Page---------------------------------------------*/
+
+#products {
+	margin-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.productImg {
+	background-color: #000;
+	display: block;
+	flex-direction: row;
+	padding: 20px;
+	margin: 50px;
+	flex: 1 0 0;
+}
+
+
+.productImg p {
+	line-height: 225px;
+	text-align: center;
+	color: #fff;
+	flex: 1 0 0;
+}
+
+#shopText {
+	display: none;
+}
+
+#shopText a {
+	color: #e8e8ee;
+	text-transform: uppercase; 
+}
+
+#shopText a:hover {
+	color: #ffde42;
+	text-decoration: underline;
+}
+
+#line {
+	border-bottom: solid 1px #c37628;
+	padding: 30px;
+}
+
+/*Shop End*/
+
+
+@media screen and (min-width: 641px) { /*-----------------------Desktop Display----------------------------*/
+
+	#siteContainer {
+	margin: 0 auto;
+	max-width: 1300px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #312d2e;
+}
+
+	/*---------------------------------------------Header---------------------------------------------*/
+
+	#mainNav {
+	margin-left: 300px;
+	padding-top: 15px;
+	width: 900px;
+	position: relative;
+	/*background-color: #bf1700;*/
+	}
+
+	nav a {
+	position: relative;
+	color: #e8e8ee;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .4s ease-out;
+
+	}
+
+	nav a::after {
+	border-radius: 1em;
+	border-top: .1em solid #e8e8ee;
+	content: "";
+	position: absolute;
+	right: 100%;
+	bottom: .14em;
+	left: 0;
+	transition: right .2s cubic-bezier(0,.5,0,1),
+	border-color .4s ease-out;
+
+	}
+
+	#mainNav li a:hover {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #FAE205;
+	}
+
+	
+	nav a:hover::after {
+	border-color: #FAE205;
+	transform-origin: right bottom;
+	right: 0;				
+	}
+
+	.navtext {
+	text-align:center;
+    vertical-align:top;
+    display:inline-block;
+    padding: 8px; 
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: Oswald, Helvetica, sans-serif;
+    font-weight: bold;
+	}
+
+	#button {
+		display: none;
+	}
+
+	#burgerCon {
+		display: none;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#mainNav li {
+	border-bottom: none;	}	
+
+	#mainNav li:first-child {
+	border-top: none;
+	} 
+
+	#mainNav li:last-child {
+	margin-bottom: 0px;
+	}
+
+	/*#Header End*/
+
+
+	/*---------------------------------------------Shop Page---------------------------------------------*/
+
+	#products {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.productImg {
+	width: 530px;
+	height: 520px;
+	background-color: #000;
+	display: block;
+	flex-direction: row;
+	padding: 20px;
+	margin: 50px;
+	}
+
+
+	.productImg p {
+	line-height: 530px;
+	text-align: center;
+	color: #fff;
+	}
+
+	#shopText {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	text-align: center;
+	color: #312d2e;
+	font-size: 45px;
+	font-family: Oswald, Helvetica, sans-serif;
+	padding-left: 120px;
+	padding-right: 145px;
+	margin: 20px;
+    }
+
+    /*Shop End*/
+
+
+    /*---------------------------------------------Footer---------------------------------------------*/
+
+#footer {
+	margin-top: 20px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav {
+	margin-left: 385px;
+	width: 520px;
+}
+
+.navtextFooter {
+	
+    text-align:center;
+    vertical-align:top;
+    display:inline-block;
+    padding: 5px; 
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Oswald, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*Footer End*/
+
+
+
+
+
