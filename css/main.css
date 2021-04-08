@@ -223,6 +223,38 @@ nav a:hover::after {
 	background-color: #312d2e;
 }
 
+
+/*---------------------------------------------Main Body Page 1---------------------------------------------*/
+
+#banner {
+	margin-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #C37628;
+}
+
+
+#title {
+	padding-top: 70px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Oswald, Helvetica, sans-serif;
+	color: #e8e8ee;
+}
+
+#text {
+	padding-top: 30px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Sawarabi Mincho, Helvetica, sans-serif;
+	color: #e8e8ee;
+}
+
+/*Main Body End*/
+
 	/*---------------------------------------------Header---------------------------------------------*/
 
 	#mainNav {
