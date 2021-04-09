@@ -172,12 +172,13 @@ nav a:hover::after {
 /*---------------------------------------------Homepage---------------------------------------------*/
 
 #banner {
-	margin-top: 0px;
-	padding-bottom: 0px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
+  	padding-top: 0px;
+  	padding-bottom: 0px;
 	border-bottom: solid 1px #C37628;
+	/*border-top: solid 1px #C37628;*/
 }
 
 
@@ -217,7 +218,7 @@ nav a:hover::after {
 	flex-direction: row;
 	position: relative;
 	width: 800px;
-    line-height: 30px;
+    line-height: 40px;
     margin-left: 20px;
     padding-bottom: 12px;
     padding-top: 15px;
@@ -441,11 +442,13 @@ nav a:hover::after {
 /*---------------------------------------------Homepage---------------------------------------------*/
 
 #banner {
-	margin-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 0px;
+	padding-bottom: 0px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
+  	padding-bottom: 20px;
+	padding-top: 20px;
 	border-bottom: solid 1px #C37628;
 }
 
