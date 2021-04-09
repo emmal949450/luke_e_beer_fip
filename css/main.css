@@ -80,8 +80,11 @@ img, embed, object, video {
 
 #mainNav button {
 	background: url(../images/burger-menu.svg) center no-repeat;
+	display: flex;
+	flex-direction: row;
 	position: relative;
-	left: 320px;
+	justify-content: right;
+	margin-left: 350px;
 	border: 0px;
 	height: 50px;
 	width: 50px;
@@ -189,30 +192,99 @@ nav a:hover::after {
 
 #text {
 	padding-top: 30px;
+	padding-bottom: 30px;
 	text-align: center;
 	font-size: 20px;
 	font-family: Sawarabi Mincho, Helvetica, sans-serif;
 	color: #e8e8ee;
+	border-bottom: solid 1px #C37628;
 }
 
 /*HomePage End*/
 
 
+/*---------------------------------------------About Page---------------------------------------------*/
 
+#aboutBody {
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	border-bottom: solid 1px #C37628;
+}
 
+#aboutTitle {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 800px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    color: #e8e8ee;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Oswald, Helvetica, sans-serif;
+    width: 95%; 
+}
 
+#aboutSubTitle {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 800px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    color: #e8e8ee;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Oswald, Helvetica, sans-serif;
+    width: 95%;
+}
 
+#aboutText {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #e8e8ee;
+    font-size: 15px;
+    font-family: Sawarabi Mincho, Helvetica, sans-serif;
+    width: 95%;
+    /*background: #bf1700;*/
+}
 
+#topImg {
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 240px;
+	height: 240px;
+	padding-top: 130px;
+	padding-right: 20px;
+	width: 400%;
+}
 
+.video {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: solid 1px #C37628;	
+}
 
+.Bar2 {
+	display: flex;
+	position: relative;
+	background-color: #fae205;
+	height: 13px;
+	margin-top: 30px;
+}
 
-
-
-
-
-
-
-
+/*About End*/
 
 
 /*---------------------------------------------Shop Page---------------------------------------------*/
@@ -359,6 +431,10 @@ nav a:hover::after {
 	margin-bottom: 0px;
 	}
 
+	#mainNav button {
+	display: none;
+}
+
 	/*#Header End*/
 
 
@@ -385,10 +461,12 @@ nav a:hover::after {
 
 #text {
 	padding-top: 30px;
+	padding-bottom: 70px;
 	text-align: center;
 	font-size: 20px;
 	font-family: Sawarabi Mincho, Helvetica, sans-serif;
 	color: #e8e8ee;
+	border-bottom: solid 1px #C37628;
 }
 
 /*Homepage End*/
@@ -399,18 +477,15 @@ nav a:hover::after {
 #aboutBody {
 	margin-top: 40px;
 	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
 	border-bottom: solid 1px #C37628;
 }
 
 #aboutTitle {
 	width: 800px;
     line-height: 30px;
-    padding-left: 150px;
+    margin-left: 100px;
     padding-bottom: 12px;
-    padding-top: 15px;
+    padding-top: 13px;
     color: #e8e8ee;
     font-size: 35px;
     font-weight: bold;
@@ -421,10 +496,10 @@ nav a:hover::after {
 #aboutSubTitle {
 	width: 800px;
     line-height: 30px;
-    padding-left: 150px;
+    margin-left: 100px;
     padding-bottom: 10px;
     color: #e8e8ee;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     font-family: Oswald, Helvetica, sans-serif;
     margin: 0 auto;
@@ -433,17 +508,25 @@ nav a:hover::after {
 #aboutText {
 	width: 800px;
     line-height: 30px;
-    padding-left: 150px;
+    margin-left: 100px;
     color: #e8e8ee;
-    font-size: 15px;
+    font-size: 17px;
     font-family: Sawarabi Mincho, Helvetica, sans-serif;
     margin: 0 auto;
-    /*background: #bf1700;*/
 }
 
 #topImg {
-	display: flex;
-	flex-direction: column;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.video {
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: solid 1px #C37628;	
 }
 
 .Bar2 {
@@ -518,6 +601,7 @@ nav a:hover::after {
 	width: 520px;
 }
 
+
 .navtextFooter {
 	
     text-align:center;
@@ -530,6 +614,7 @@ nav a:hover::after {
     font-size: 20px;
     font-family: Oswald, Helvetica, sans-serif;
     font-weight: bold;
+
 }
 
 /*Footer End*/
