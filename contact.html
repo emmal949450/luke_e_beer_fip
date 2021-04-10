@@ -29,7 +29,18 @@
             <li class="navtext"><a href="shop.html">STORE</a></li>
             <li class="navtext"><a href="contact.html">CONTACT US</a></li>
             <li class="navtext"><a href="ad-page.html">ADVERTISEMENTS</a></li>
-            </ul>      
+            </ul>   
+
+            <button id="button"></button> 
+               <div id="burgerCon">
+                <ul id="menu">
+                <li class="menuText"><a href="index.html">HOME</a></li>
+                <li class="menuText"><a href="About.html">ABOUT US</a></li>
+                <li class="menuText"><a href="shop.html">STORE</a></li>
+                <li class="menuText"><a href="contact.html">CONTACT US</a></li>
+                <li class="menuText"><a href="ad-page.html">ADVERTISEMENTS</a></li>
+                </ul>
+               </div>    
         </nav>
 		</header>
 		<!--Header End-->
@@ -46,16 +57,16 @@
 	 			<h2 class="hidden">Name box</h2>
 	 			<form action="form.php" method="post" name="questions_or_concerns">
 	 				<label for="Name">Name</label>
-	 				<input type="text" name="Name">
+	 				<input type="text" name="Name" placeholder="Your Name..">
 	 			</form>
 	 		</section>
 
 
 	 		<section>
 	 			<h2 class="hidden">Email box</h2>
-	 			<form action="form.php" method="post" name="Email">
+	 			<form action="form.php" method="post" name="Email" class="conPadding">
 	 				<label for="Email">Email</label>
-	 				<input type="text" name="Email">
+	 				<input type="text" name="Email" placeholder="Your Email..">
 	 			</form>
 	 		</section>
 
@@ -65,15 +76,16 @@
 	 			<form action="form.php" method="post">
 	 				<label for="Message">Message</label>
 	 			</form>
-	 				<textarea rows="15" cols="50" name="Message"></textarea>
+	 				<textarea rows="15" cols="50" name="Message" placeholder="Your Message.." class="conPadding"></textarea>
 	 		</section>
 
 
 	 		<section>
 	 			<h2 class="hidden">File Upload</h2>
-	 			<form>
+	 			<form> 
 	 				<label for="file-select">Upload</label>
-	 				<input type="file" name="Upload">
+	 				<input type="file" name="file-select" class="buttonPadding">
+	 			
 	 			</form>
 	 		</section>
 
@@ -81,7 +93,7 @@
 	 		<section>
 	 			<h2 class="hidden">Submit Button</h2>
 	 			<form>
-	 				<input type="submit" name="submit" value="Send">
+	 				<input type="submit" name="submit" value="Send" id="sendButton">
 	 			</form>
 	 		</section>
 	 	</section>

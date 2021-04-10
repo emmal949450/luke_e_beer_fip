@@ -51,12 +51,12 @@ img, embed, object, video {
 
 #menu {
 	width: 200px;
-	height: 210px;
+	height: 308px;
 	position: fixed;
 	top: 0;
 	right: 0;
 	background-color: #242424;
-	padding: 8px; 
+	padding: 5px;
     font-size: 20px;
     font-family: Oswald, Helvetica, sans-serif;
     font-weight: bold;
@@ -88,34 +88,39 @@ img, embed, object, video {
 	border: 0px;
 	height: 50px;
 	width: 50px;
-	transition: all .1s ease;
 }	
 
 #mainNav button.expanded {
-	transform: rotate(90deg);
+	background: url(../images/x-button.svg) center no-repeat;
+    z-index: 1;
+    bottom: 20px;
+    left: 10px;
+    display: flex;
+	flex-direction: row;
+	position: relative;
+	justify-content: right;
+	margin-left: 350px;
+	border: 0px;
+	height: 33px;
+	width: 33px;
 }
 
 #mainNav li a {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	display: block;
 	padding: 10px 0 10px 0;
 	text-align: center;
-	color: #ffffff;
+	color: #efefef;
 }
 
 #mainNav li {
-	border-top: 1px solid #efefef;
 	border-bottom: 1px solid #efefef;
 }
-
-#menuText li:first-child {
-	margin-top: 10px;
-
-} 
 
 #menuText li:last-child {
 	margin-bottom: 10px;
 }
-
 
 nav a {
 	position: relative;
@@ -123,7 +128,6 @@ nav a {
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: color .4s ease-out;
-
 }
 
 #mainNav li a:hover {
@@ -144,29 +148,7 @@ nav a:hover::after {
 	display: none;
 }
 
-
 /*Header End*/
-
-
-/*---------------------------------------------Footer---------------------------------------------*/
-
-#footer {
-	margin-top: 20px;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-#footerNav {
-
-}
-
-.navtextFooter {
-	display: none;
-}
-
-/*Footer End*/
 
 
 /*---------------------------------------------Homepage---------------------------------------------*/
@@ -304,7 +286,6 @@ nav a:hover::after {
 	display: none;
 }
 
-
 .shopText2 {
 	display: flex;
     flex-direction: column;
@@ -333,6 +314,71 @@ nav a:hover::after {
 }
 
 /*Shop End*/
+
+
+/*---------------------------------------------Contact Page---------------------------------------------*/
+
+#contactForm {
+	font-size: 20px;
+	color: #e8e8ee;
+	font-family: Oswald, Helvetica, sans-serif;
+	padding-top: 30px;
+	padding-left: 5px;	
+}
+
+#contactForm p {
+	padding-bottom: 15px;
+}	
+
+#sendButton {
+  background-color: #C37628;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+#sendButton:hover {
+  border-radius: 13px;
+  background-color: #a9641e;
+}
+
+
+.buttonPadding { 
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.conPadding {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/*Contact End*/
+
+
+/*---------------------------------------------Footer---------------------------------------------*/
+
+#footer {
+	margin-top: 20px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav {
+
+}
+
+.navtextFooter {
+	display: none;
+}
+
+/*Footer End*/
 
 
 @media screen and (min-width: 641px) { /*----------------------------------------Desktop Display-----------------------------------*/
@@ -435,6 +481,10 @@ nav a:hover::after {
 	#mainNav button {
 	display: none;
 }
+
+	#mainNav button.expanded {
+		display: none;
+	}
 
 	/*#Header End*/
 
@@ -541,10 +591,6 @@ nav a:hover::after {
 /*About End*/
 
 
-
-
-
-
 /*---------------------------------------------Shop Page---------------------------------------------*/
 
 	#products {
@@ -589,6 +635,41 @@ nav a:hover::after {
     /*Shop End*/
 
 
+    /*---------------------------------------------Contact Page---------------------------------------------*/
+
+#contactForm {
+	
+}
+
+#sendButton {
+  background-color: #C37628;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+#sendButton:hover {
+  border-radius: 13px;
+  background-color: #a9641e;
+}
+
+
+.buttonPadding { 
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.conPadding {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*Contact End*/
+
+
     /*---------------------------------------------Footer---------------------------------------------*/
 
 #footer {
@@ -617,7 +698,6 @@ nav a:hover::after {
     font-size: 20px;
     font-family: Oswald, Helvetica, sans-serif;
     font-weight: bold;
-
 }
 
 /*Footer End*/
