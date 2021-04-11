@@ -1,0 +1,708 @@
+@charset "UTF-8";
+
+.hidden {
+	display: none;
+}
+
+#siteContainer {
+	margin: 0 auto;
+	max-width: 640px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #312d2e; 
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #312d2e;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+/*---------------------------------------------Header---------------------------------------------*/
+
+.Bar {
+	background-color: #fae205;
+	height: 13px;
+}
+
+#mainHeader {
+	margin-top: 25px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #C37628;
+}
+
+#logo {
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 170px;
+}
+
+#mainNav {
+	
+}
+
+#menu {
+	width: 200px;
+	height: 308px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #242424;
+	padding: 5px;
+    font-size: 20px;
+    font-family: Oswald, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#menuText {
+   
+}
+
+
+#burgerCon {
+	margin-top: 20px;
+	display: none;
+	position: relative;
+	left: 150px;
+}
+
+#burgerCon.slideToggle {
+	display: block;
+}
+
+#mainNav button {
+	background: url(../images/burger-menu.svg) center no-repeat;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	justify-content: right;
+	margin-left: 350px;
+	border: 0px;
+	height: 50px;
+	width: 50px;
+}	
+
+#mainNav button.expanded {
+	background: url(../images/x-button.svg) center no-repeat;
+    z-index: 1;
+    bottom: 20px;
+    left: 10px;
+    display: flex;
+	flex-direction: row;
+	position: relative;
+	justify-content: right;
+	margin-left: 350px;
+	border: 0px;
+	height: 33px;
+	width: 33px;
+}
+
+#mainNav li a {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	color: #efefef;
+}
+
+#mainNav li {
+	border-bottom: 1px solid #efefef;
+}
+
+#menuText li:last-child {
+	margin-bottom: 10px;
+}
+
+nav a {
+	position: relative;
+	color: #e8e8ee;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .4s ease-out;
+}
+
+#mainNav li a:hover {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #FAE205;
+}
+
+nav a:hover::after {
+	border-color: #FAE205;
+	transform-origin: right bottom;
+	right: 0;			
+}
+
+.navtext {
+	display: none;
+}
+
+/*Header End*/
+
+
+/*---------------------------------------------Homepage---------------------------------------------*/
+
+#banner {
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	padding-top: 0px;
+  	padding-bottom: 0px;
+	border-bottom: solid 1px #C37628;
+	/*border-top: solid 1px #C37628;*/
+}
+
+
+#title {
+	padding-top: 30px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Oswald, Helvetica, sans-serif;
+	color: #e8e8ee;
+}
+
+#text {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Sawarabi Mincho, Helvetica, sans-serif;
+	color: #e8e8ee;
+	border-bottom: solid 1px #C37628;
+}
+
+/*HomePage End*/
+
+
+/*---------------------------------------------About Page---------------------------------------------*/
+
+#aboutBody {
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	border-bottom: solid 1px #C37628;
+}
+
+#aboutTitle {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 800px;
+    line-height: 40px;
+    margin-left: 20px;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    color: #e8e8ee;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Oswald, Helvetica, sans-serif;
+    width: 95%; 
+}
+
+#aboutSubTitle {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 800px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    color: #e8e8ee;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Oswald, Helvetica, sans-serif;
+    width: 95%;
+}
+
+#aboutText {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #e8e8ee;
+    font-size: 15px;
+    font-family: Sawarabi Mincho, Helvetica, sans-serif;
+    width: 95%;
+    /*background: #bf1700;*/
+}
+
+#topImg {
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 240px;
+	height: 240px;
+	padding-top: 130px;
+	padding-right: 20px;
+	width: 400%;
+}
+
+.video {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: solid 1px #C37628;	
+}
+
+.Bar2 {
+	display: flex;
+	position: relative;
+	background-color: #fae205;
+	height: 13px;
+	margin-top: 30px;
+}
+
+/*About End*/
+
+
+/*---------------------------------------------Shop Page---------------------------------------------*/
+
+#products {
+	margin-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#shopText {
+	display: none;
+}
+
+.shopText2 {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+	text-align: center;
+	color: #312d2e;
+	font-size: 45px;
+	font-family: Oswald, Helvetica, sans-serif;
+}
+
+.shopText2 a {
+	color: #e8e8ee;
+	text-transform: uppercase; 
+}
+
+.shopText2 a:hover {
+	color: #ffde42;
+	text-decoration: underline;
+}
+
+#line {
+	border-bottom: solid 1px #c37628;
+	padding: 30px;
+}
+
+/*Shop End*/
+
+
+/*---------------------------------------------Contact Page---------------------------------------------*/
+
+#contactForm {
+	font-size: 20px;
+	color: #e8e8ee;
+	font-family: Oswald, Helvetica, sans-serif;
+	padding-top: 30px;
+	padding-left: 5px;	
+}
+
+#contactForm p {
+	padding-bottom: 15px;
+}	
+
+#sendButton {
+  background-color: #C37628;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+#sendButton:hover {
+  border-radius: 13px;
+  background-color: #a9641e;
+}
+
+
+.buttonPadding { 
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.conPadding {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/*Contact End*/
+
+
+/*---------------------------------------------Footer---------------------------------------------*/
+
+#footer {
+	margin-top: 20px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav {
+
+}
+
+.navtextFooter {
+	display: none;
+}
+
+/*Footer End*/
+
+
+@media screen and (min-width: 641px) { /*----------------------------------------Desktop Display-----------------------------------*/
+
+	#siteContainer {
+	margin: 0 auto;
+	max-width: 1300px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #312d2e;
+}
+
+
+/*---------------------------------------------Header---------------------------------------------*/
+
+	#mainNav {
+	margin-left: 300px;
+	padding-top: 15px;
+	width: 900px;
+	position: relative;
+	/*background-color: #bf1700;*/
+	}
+
+	nav a {
+	position: relative;
+	color: #e8e8ee;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color .4s ease-out;
+
+	}
+
+	nav a::after {
+	border-radius: 1em;
+	border-top: .1em solid #e8e8ee;
+	content: "";
+	position: absolute;
+	right: 100%;
+	bottom: .14em;
+	left: 0;
+	transition: right .2s cubic-bezier(0,.5,0,1),
+	border-color .4s ease-out;
+
+	}
+
+	#mainNav li a:hover {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #FAE205;
+	}
+
+	
+	nav a:hover::after {
+	border-color: #FAE205;
+	transform-origin: right bottom;
+	right: 0;				
+	}
+
+	.navtext {
+	text-align:center;
+    vertical-align:top;
+    display:inline-block;
+    padding: 8px; 
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: Oswald, Helvetica, sans-serif;
+    font-weight: bold;
+	}
+
+	#button {
+		display: none;
+	}
+
+	#burgerCon {
+		display: none;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#mainNav li {
+	border-top: none;
+	border-bottom: none;	
+	}	
+
+	#mainNav li:first-child {
+	border-top: none;
+	} 
+
+	#mainNav li:last-child {
+	border-bottom: none;
+	margin-bottom: 0px;
+	}
+
+	#mainNav button {
+	display: none;
+}
+
+	#mainNav button.expanded {
+		display: none;
+	}
+
+	/*#Header End*/
+
+
+/*---------------------------------------------Homepage---------------------------------------------*/
+
+#banner {
+	margin-top: 0px;
+	padding-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: solid 1px #C37628;
+}
+
+
+#title {
+	padding-top: 70px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Oswald, Helvetica, sans-serif;
+	color: #e8e8ee;
+}
+
+#text {
+	padding-top: 30px;
+	padding-bottom: 70px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Sawarabi Mincho, Helvetica, sans-serif;
+	color: #e8e8ee;
+	border-bottom: solid 1px #C37628;
+}
+
+/*Homepage End*/
+
+
+/*---------------------------------------------About Page---------------------------------------------*/
+
+#aboutBody {
+	margin-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: solid 1px #C37628;
+}
+
+#aboutTitle {
+	width: 800px;
+    line-height: 30px;
+    margin-left: 100px;
+    padding-bottom: 12px;
+    padding-top: 13px;
+    color: #e8e8ee;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Oswald, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+#aboutSubTitle {
+	width: 800px;
+    line-height: 30px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    color: #e8e8ee;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Oswald, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+#aboutText {
+	width: 800px;
+    line-height: 30px;
+    margin-left: 100px;
+    color: #e8e8ee;
+    font-size: 17px;
+    font-family: Sawarabi Mincho, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+#topImg {
+	padding-top: 0px;
+	padding-left: 0px;
+}
+
+.video {
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: solid 1px #C37628;
+}
+
+.Bar2 {
+	background-color: #fae205;
+	height: 13px;
+	margin-top: 30px;
+}
+
+/*About End*/
+
+
+/*---------------------------------------------Shop Page---------------------------------------------*/
+
+	#products {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.productImg {
+	display: block;
+	flex-direction: row;
+	padding: 10px;
+	margin: 20px;
+	}
+
+	#shopText {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	text-align: center;
+	color: #312d2e;
+	font-size: 45px;
+	font-family: Oswald, Helvetica, sans-serif;
+	padding-left: 120px;
+	padding-right: 120px;
+	margin: 10px;
+    }
+
+    #shopText a {
+	color: #e8e8ee;
+	text-transform: uppercase; 
+	}
+
+	#shopText a:hover {
+	color: #ffde42;
+	text-decoration: underline;
+	}
+
+    .shopText2 {
+    	display: none;
+    }
+
+    /*Shop End*/
+
+
+    /*---------------------------------------------Contact Page---------------------------------------------*/
+
+#contactForm {
+	
+}
+
+#sendButton {
+  background-color: #C37628;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+#sendButton:hover {
+  border-radius: 13px;
+  background-color: #a9641e;
+}
+
+
+.buttonPadding { 
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.conPadding {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*Contact End*/
+
+
+    /*---------------------------------------------Footer---------------------------------------------*/
+
+#footer {
+	margin-top: 20px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav {
+	margin-left: 385px;
+	width: 520px;
+}
+
+
+.navtextFooter {
+	
+    text-align:center;
+    vertical-align:top;
+    display:inline-block;
+    padding: 5px; 
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Oswald, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*Footer End*/
+
+
+
+
+
