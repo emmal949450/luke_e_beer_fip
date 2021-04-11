@@ -12,6 +12,7 @@
 	
 </head>
 <body>
+
 	<section class="Bar"><h2 class="hidden">Top</h2></section>
 	<h2 class="hidden">Logo</h2>
 	<div id="siteContainer">
@@ -21,8 +22,9 @@
 		<header id="mainHeader">
 			<div id="logo"><img src="images/logo-for-web.svg" width="170" height="200" alt="logo"></div>
 
-	<h2 class="hidden">Nav</h2>
+	
             <nav id="mainNav">
+            	<h2 class="hidden">Nav</h2>
             <ul>
             <li class="navtext"><a href="index.html">HOME</a></li>
             <li class="navtext"><a href="about.html">ABOUT US</a></li>
@@ -32,17 +34,19 @@
             </ul>   
 
             <button id="button"></button> 
-               <div id="burgerCon">
-                <ul id="menu">
-                <li class="menuText"><a href="index.html">HOME</a></li>
-                <li class="menuText"><a href="about.html">ABOUT US</a></li>
-                <li class="menuText"><a href="shop.html">STORE</a></li>
-                <li class="menuText"><a href="contact.html">CONTACT US</a></li>
-                <li class="menuText"><a href="ad-page.html">ADVERTISEMENTS</a></li>
-                </ul>
-               </div>    
+        		<div id="burgerCon">
+        			<h2 class="hidden">Mobile Nav</h2>
+        		<ul id="menu">
+        	 	<li><a href="index.html">HOME</a></li>
+            	<li><a href="about.html">ABOUT US</a></li>
+            	<li><a href="shop.html">STORE</a></li>
+           		<li><a href="contact.html">CONTACT US</a></li>
+            	<li><a href="ad-page.html">ADVERTISEMENTS</a></li>
+        	 	</ul>
+         		</div>    
         </nav>
 		</header>
+
 		<!--Header End-->
 
 		<!--Main Start-->
@@ -56,39 +60,35 @@
 	 		<section>
 	 			<h2 class="hidden">Name box</h2>
 	 			<form action="form.php" method="post" name="questions_or_concerns">
-	 				<label for="Name">Name</label>
+	 				<label>Name</label>
 	 				<input type="text" name="Name" placeholder="Your Name..">
 	 			</form>
 	 		</section>
 
-
 	 		<section>
 	 			<h2 class="hidden">Email box</h2>
 	 			<form action="form.php" method="post" name="Email" class="conPadding">
-	 				<label for="Email">Email</label>
+	 				<label>Email</label>
 	 				<input type="text" name="Email" placeholder="Your Email..">
 	 			</form>
 	 		</section>
 
-	 		
 	 		<section>
 	 			<h2 class="hidden">Message Box</h2>
 	 			<form action="form.php" method="post">
-	 				<label for="Message">Message</label>
+	 				<label>Message</label>
 	 			</form>
 	 				<textarea rows="15" cols="50" name="Message" placeholder="Your Message.." class="conPadding"></textarea>
 	 		</section>
 
-
 	 		<section>
 	 			<h2 class="hidden">File Upload</h2>
 	 			<form> 
-	 				<label for="file-select">Upload</label>
+	 				<label>Upload</label>
 	 				<input type="file" name="file-select" class="buttonPadding">
 	 			
 	 			</form>
 	 		</section>
-
 
 	 		<section>
 	 			<h2 class="hidden">Submit Button</h2>
@@ -98,14 +98,17 @@
 	 		</section>
 	 	</section>
 
-	 	<div id="line"></div>
+	 	<div id="line2"></div>
+
 		<!--Main End-->
 
 
 		<!--Footer-->
+
 		<footer id="footer">
-        	<h2 class="hidden">Bottom Nav</h2>
+        	
             <nav id="footerNav">
+            	<h2 class="hidden">Bottom Nav</h2>
             <ul>
             <li class="navtextFooter"><a href="index.html">HOME</a></li>
             <li class="navtextFooter"><a href="About.html">ABOUT US</a></li>
@@ -115,6 +118,7 @@
             </ul>      
         </nav>
         </footer>
+
         <!--Footer End-->
 
 	</div>

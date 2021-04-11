@@ -13,10 +13,10 @@
 }
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	color: #333;
 	background-color: #312d2e;
+	font-family: Sawarabi Mincho, Helvetica, sans-serif;
+	font-size: 12px;
+
 }
 
 img, embed, object, video {
@@ -45,10 +45,6 @@ img, embed, object, video {
 	width: 170px;
 }
 
-#mainNav {
-	
-}
-
 #menu {
 	width: 200px;
 	height: 308px;
@@ -61,11 +57,6 @@ img, embed, object, video {
     font-family: Oswald, Helvetica, sans-serif;
     font-weight: bold;
 }
-
-#menuText {
-   
-}
-
 
 #burgerCon {
 	margin-top: 20px;
@@ -160,7 +151,6 @@ nav a:hover::after {
   	padding-top: 0px;
   	padding-bottom: 0px;
 	border-bottom: solid 1px #C37628;
-	/*border-top: solid 1px #C37628;*/
 }
 
 
@@ -185,12 +175,50 @@ nav a:hover::after {
 
 #text2 {
 	padding-top: 10px;
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
 	font-family: Sawarabi Mincho, Helvetica, sans-serif;
 	color: #e8e8ee;
+}
+
+.signUp {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border-top: solid 1px #C37628;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	border-bottom: solid 1px #C37628;
+}
+
+#updateText {
+	font-size: 30px;
+	color: #e8e8ee;
+	padding-right: 10px;
+	font-family: Oswald, Helvetica, sans-serif;
+	justify-content: center;
+}
+
+#updateBox {
+	padding: 15px;
+	width: 500px;
+}
+
+#sendButtonHome {
+  background-color: #C37628;
+  color: white;
+  padding: 17px 25px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+#sendButtonHome:hover {
+  border-radius: 13px;
+  background-color: #a9641e;
 }
 
 /*HomePage End*/
@@ -366,6 +394,11 @@ nav a:hover::after {
 	margin-bottom: 10px;
 }
 
+#line2 {
+	border-bottom: solid 1px #c37628;
+	padding: 15px;
+}
+
 /*Contact End*/
 
 
@@ -381,14 +414,10 @@ nav a:hover::after {
 
 .adsImg {
 	padding-bottom: 10px;
+	padding-left: 15px;
 }
 
-
-
 /*Ads Page End*/
-
-
-
 
 
 /*---------------------------------------------Footer---------------------------------------------*/
@@ -399,10 +428,6 @@ nav a:hover::after {
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
-}
-
-#footerNav {
-
 }
 
 .navtextFooter {
@@ -511,7 +536,7 @@ nav a:hover::after {
 
 	#mainNav button {
 	display: none;
-}
+	}
 
 	#mainNav button.expanded {
 		display: none;
@@ -535,9 +560,10 @@ nav a:hover::after {
 
 
 #title {
-	padding-top: 70px;
+	padding-top: 50px;
 	text-align: center;
-	font-size: 50px;
+	letter-spacing: 4px;
+	font-size: 55px;
 	font-weight: bold;
 	font-family: Oswald, Helvetica, sans-serif;
 	color: #e8e8ee;
@@ -565,7 +591,7 @@ nav a:hover::after {
 	width: 1000px;
 	padding-left: 183px;
 	padding-top: 10px;
-	padding-bottom: 70px;
+	padding-bottom: 60px;
 	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
@@ -577,7 +603,6 @@ nav a:hover::after {
 	border-top: solid 1px #C37628;
 	padding-top: 30px;
 	padding-bottom: 25px;
-	padding-left: 200px;
 	border-bottom: solid 1px #C37628;
 }
 
@@ -608,7 +633,6 @@ nav a:hover::after {
   border-radius: 13px;
   background-color: #a9641e;
 }
-
 
 /*Homepage End*/
 
@@ -664,7 +688,6 @@ nav a:hover::after {
 .video {
 	justify-content: center;
 	position: relative;
-	width: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-bottom: solid 1px #C37628;
@@ -775,6 +798,7 @@ nav a:hover::after {
 #adsBottom {
 	padding-left: 60px;
 	padding-right: 60px;
+	padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -787,25 +811,13 @@ nav a:hover::after {
 	margin: 10px;
 }
 
-#line2 {
-	border-bottom: solid 1px width: 900px #c37628;
-	padding: 30px;
-}
-
 /*Ads Page End*/
-
-
-
-
-
-
-
 
 
     /*---------------------------------------------Footer---------------------------------------------*/
 
 #footer {
-	margin-top: 20px;
+	margin-top: 0px;
 	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
@@ -813,15 +825,9 @@ nav a:hover::after {
 }
 
 #footerNav {
-	margin-left: 385px;
+	margin-left: 400px;
 	width: 520px;
 }
-
-#footerNavAds {
-	margin-left: 485px;
-	width: 520px;
-}
-
 
 .navtextFooter {
     text-align:center;
@@ -830,15 +836,14 @@ nav a:hover::after {
     padding: 5px; 
     margin-left: 8px;
     margin-right: 5px;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 20px;
     font-family: Oswald, Helvetica, sans-serif;
     font-weight: bold;
 }
 
+.footerLine {
+	border-top: solid 1px #C37628;
+}
+
 /*Footer End*/
-
-
-
-
-
