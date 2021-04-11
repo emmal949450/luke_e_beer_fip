@@ -178,9 +178,19 @@ nav a:hover::after {
 	padding-bottom: 30px;
 	text-align: center;
 	font-size: 20px;
+	line-height: 26px;
 	font-family: Sawarabi Mincho, Helvetica, sans-serif;
 	color: #e8e8ee;
-	border-bottom: solid 1px #C37628;
+}
+
+#text2 {
+	padding-top: 10px;
+	padding-bottom: 70px;
+	text-align: center;
+	font-size: 21px;
+	font-weight: bold;
+	font-family: Sawarabi Mincho, Helvetica, sans-serif;
+	color: #e8e8ee;
 }
 
 /*HomePage End*/
@@ -356,8 +366,29 @@ nav a:hover::after {
 	margin-bottom: 10px;
 }
 
-
 /*Contact End*/
+
+
+/*---------------------------------------------Ads Page---------------------------------------------*/
+
+.adsVideo {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.adsImg {
+	padding-bottom: 10px;
+}
+
+
+
+/*Ads Page End*/
+
+
+
 
 
 /*---------------------------------------------Footer---------------------------------------------*/
@@ -513,14 +544,71 @@ nav a:hover::after {
 }
 
 #text {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	padding-left: 150px;
+	width: 1000px;
 	padding-top: 30px;
-	padding-bottom: 70px;
+	padding-bottom: 10px;
 	text-align: center;
 	font-size: 20px;
+	line-height: 26px;
 	font-family: Sawarabi Mincho, Helvetica, sans-serif;
 	color: #e8e8ee;
+}
+
+#text2 {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 1000px;
+	padding-left: 183px;
+	padding-top: 10px;
+	padding-bottom: 70px;
+	text-align: center;
+	font-size: 21px;
+	font-weight: bold;
+	font-family: Sawarabi Mincho, Helvetica, sans-serif;
+	color: #e8e8ee;
+}
+
+.signUp {
+	border-top: solid 1px #C37628;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	padding-left: 200px;
 	border-bottom: solid 1px #C37628;
 }
+
+#updateText {
+	font-size: 30px;
+	color: #e8e8ee;
+	padding-right: 10px;
+	font-family: Oswald, Helvetica, sans-serif;
+	justify-content: center;
+}
+
+#updateBox {
+	padding: 15px;
+	width: 500px;
+}
+
+#sendButtonHome {
+  background-color: #C37628;
+  color: white;
+  padding: 17px 25px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+#sendButtonHome:hover {
+  border-radius: 13px;
+  background-color: #a9641e;
+}
+
 
 /*Homepage End*/
 
@@ -637,10 +725,6 @@ nav a:hover::after {
 
     /*---------------------------------------------Contact Page---------------------------------------------*/
 
-#contactForm {
-	
-}
-
 #sendButton {
   background-color: #C37628;
   color: white;
@@ -670,6 +754,54 @@ nav a:hover::after {
 /*Contact End*/
 
 
+/*---------------------------------------------Ads Page---------------------------------------------*/
+
+.adsVideo {
+	justify-content: center;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+#ads {
+	margin-top: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#adsBottom {
+	padding-left: 60px;
+	padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adsImg {
+	display: block;
+	flex-direction: row;
+	padding: 10px;
+	margin: 10px;
+}
+
+#line2 {
+	border-bottom: solid 1px width: 900px #c37628;
+	padding: 30px;
+}
+
+/*Ads Page End*/
+
+
+
+
+
+
+
+
+
     /*---------------------------------------------Footer---------------------------------------------*/
 
 #footer {
@@ -685,9 +817,13 @@ nav a:hover::after {
 	width: 520px;
 }
 
+#footerNavAds {
+	margin-left: 485px;
+	width: 520px;
+}
+
 
 .navtextFooter {
-	
     text-align:center;
     vertical-align:top;
     display:inline-block;
